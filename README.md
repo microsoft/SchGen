@@ -144,7 +144,7 @@ You should see two files of ``organized_fp.json`` and ``organized_lib.json`` und
 
 Execute the following command to sketch the schematic based on the user request and image source.
 ```
-python ./dataset_construction/agentic_sketch.py --model gpt-5.2 --save_path ./dataset_construction/sch_sketch --schematic_name {SCHEMATIC_NAME} --sch_request "{USER_REQUEST}" --img_ref_path {IMAGE_REFERENCE}
+python ./dataset_construction/agentic_sketch.py --model {MODEL_NAME} --save_path ./dataset_construction/sch_sketch --schematic_name {SCHEMATIC_NAME} --sch_request "{USER_REQUEST}" --img_ref_path {IMAGE_REFERENCE}
 ```
 
 #### 1.3 Human Alignment
