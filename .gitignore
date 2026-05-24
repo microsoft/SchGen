@@ -1,0 +1,72 @@
+/.venv
+
+
+# Pickle files for local component libraries, for fast loading
+/lib_pickle_dir
+
+
+# Skidl log files
+skidl.*
+
+__pycache__/
+
+skidl-test-legacy/
+
+# Logs
+/logs
+/dataset_preparation/logs
+
+# KiCAD project auxiliary files (auto save and lock files)
+*.zip
+*.lck
+
+# Skip all the datasheet files
+/dataset_preparation/datasheets/
+**/*.pdf
+*.pdf
+
+*.json
+*.jsonl
+
+gptoss_training/gpt-oss-20b-multilingual-reasoner
+gptoss_training/gpt-oss-20b-pcb-schematic
+gpt-oss-20b-multilingual-reasoner
+gpt-oss-20b-pcb-schematic
+gpt-oss-20b-pcb-schematic*/
+
+finetune_dataset_block.jsonlfinetune_dataset_sch_definite_wires.jsonl
+finetune_dataset_block.jsonl
+*.log
+
+
+blob_mount_amulet
+
+blob_new_mnt
+
+export*.log
+export
+
+
+## Training files
+# training artifacts
+**/checkpoint-*/
+**/*.pt
+**/*.safetensors
+**/*.out
+**/*.log
+
+# common ML junk
+**/__pycache__/
+**/*.pyc
+wandb/
+runs/
+outputs/
+*.ckpt
+
+# Ignore verl in GCR
+gcr_run/verl/
+*.deb
+cudnn-local-repo-ubuntu2204-9.10.2_1.0-1_amd64.deb
+cuda-repo-ubuntu2204-12-8-local_12.8.1-570.124.06-1_amd64.deb
+
+Miniconda3-latest-Linux-x86_64.sh
