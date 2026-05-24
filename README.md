@@ -10,7 +10,10 @@ SchGen is a domain-specialized large language model and dataset framework for au
 - Agentic sketch pipeline for dataset construction
 - LoRA fine-tuning pipeline for GPT-oss models
 
-![Pipeline](./assets/pipeline.png)
+<p align="center">
+  <img src="assets/pipeline.png" width="900"
+       style="background-color:white;padding:20px;border-radius:10px">
+</p>
 
 The dataset is available at: [microsoft/SchGen_dataset](https://huggingface.co/datasets/microsoft/SchGen_dataset).
 The model is available at: [microsoft/SchGen](https://huggingface.co/microsoft/SchGen).
