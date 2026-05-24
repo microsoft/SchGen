@@ -13,7 +13,9 @@ SchGen is a domain-specialized large language model and dataset framework for au
 ![Pipeline](./assets/pipeline.png)
 
 The dataset is available at: [microsoft/SchGen_dataset](https://huggingface.co/datasets/microsoft/SchGen_dataset).
+
 The model is available at: [microsoft/SchGen](https://huggingface.co/microsoft/SchGen).
+
 To cite this project and corresponding paper, please use the following bib item:[TODO]
 
 ## Get Started
