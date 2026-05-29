@@ -16,7 +16,19 @@ The dataset is available at: [microsoft/SchGen_dataset](https://huggingface.co/d
 
 The model is available at: [microsoft/SchGen](https://huggingface.co/microsoft/SchGen).
 
-To cite this project and corresponding paper, please use the following bib item:[TODO]
+To cite this project and corresponding paper, please use the following bib item:
+
+```
+@misc{luo2026schgenpcbschematicgeneration,
+      title={SchGen: PCB Schematic Generation with Semantic-Grounded Code Representations}, 
+      author={Qinpei Luo and Ruichun Ma and Xinyu Zhang and Lili Qiu},
+      year={2026},
+      eprint={2605.30345},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2605.30345}, 
+}
+```
 
 ## Get Started
 
