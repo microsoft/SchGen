@@ -117,7 +117,7 @@ pydub==0.25.1
 PyJWT==2.10.1
 PyMuPDF==1.25.5
 pyparsing==3.2.3
-python-multipart==0.0.20
+python-multipart==0.0.31
 pytz==2025.2
 pyxnat==1.6.3
 PyYAML==6.0.2
