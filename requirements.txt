@@ -114,7 +114,7 @@ pydantic==2.11.4
 pydantic_core==2.33.2
 pydot==4.0.1
 pydub==0.25.1
-PyJWT==2.10.1
+PyJWT==2.13.0
 PyMuPDF==1.25.5
 pyparsing==3.2.3
 python-multipart==0.0.20
