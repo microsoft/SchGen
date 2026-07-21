@@ -104,7 +104,7 @@ packaging==24.2
 pandas==2.3.1
 pathlib==1.0.1
 peft==0.17.0
-pillow==11.2.1
+pillow==12.3.0
 propcache==0.3.1
 prov==2.1.1
 puremagic==1.30
