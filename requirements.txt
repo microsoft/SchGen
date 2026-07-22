@@ -133,7 +133,7 @@ safehttpx==0.1.6
 safetensors==0.6.2
 scipy==1.16.1
 semantic-version==2.10.0
-setuptools==78.1.1
+setuptools==83.0.0
 sexpdata==1.0.0
 shellingham==1.5.4
 simplejson==3.20.1
