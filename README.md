@@ -46,7 +46,7 @@ To cite this project and corresponding paper, please use the following bib item:
 
     (2) Enter your virtual environment and install python packages with:
     
-    `pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128`
+    `pip install torch==2.8.0 torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128`
 
     `pip install -r ./requirements.txt`
 
