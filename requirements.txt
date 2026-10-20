@@ -37,7 +37,7 @@ filelock==3.19.1
 flash_attn==2.8.3
 fonttools==4.57.0
 frozenlist==1.6.0
-fsspec==2025.3.0
+fsspec==2026.6.0
 future==1.0.0
 gradio==5.42.0
 gradio_client==1.11.1
