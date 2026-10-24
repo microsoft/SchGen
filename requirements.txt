@@ -10,7 +10,7 @@ attrs==25.3.0
 azure-core==1.33.0
 azure-identity==1.21.0
 azureopenai==0.0.1
-Brotli==1.1.0
+Brotli==1.2.1
 certifi==2025.4.26
 cffi==1.17.1
 charset-normalizer==3.4.1
