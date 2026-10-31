@@ -11,7 +11,7 @@ azure-core==1.33.0
 azure-identity==1.21.0
 azureopenai==0.0.1
 Brotli==1.1.0
-certifi==2025.4.26
+certifi==2026.10.18
 cffi==1.17.1
 charset-normalizer==3.4.1
 ci-info==0.3.0
