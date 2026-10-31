@@ -33,7 +33,7 @@ etelemetry==0.3.1
 fastapi==0.116.1
 ffmpy==0.6.1
 # torch==2.8.0+cu128
-filelock==3.19.1
+filelock==4.2.1
 flash_attn==2.8.3
 fonttools==4.57.0
 frozenlist==1.6.0
