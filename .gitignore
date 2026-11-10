@@ -1,4 +1,7 @@
 /.venv
+.env
+.env.*
+!.env.example
 
 
 # Pickle files for local component libraries, for fast loading

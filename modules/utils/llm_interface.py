@@ -24,6 +24,13 @@ from modules.utils.custom_logger import setup_logger
 
 REASONING_LEVEL = "medium"  # can be "low", "medium", "high"
 
+
+def _get_api_key(name: str) -> str:
+    api_key = os.environ.get(name, "").strip()
+    if not api_key:
+        raise ValueError(f"Set the {name} environment variable before using this provider.")
+    return api_key
+
 # Function to encode the image
 def encode_image(image_path):
     with open(image_path, "rb") as image_file:
@@ -700,7 +707,7 @@ class NvidiaLLMInterface(LLMInterface):
 
         self.client = openai.OpenAI(
             base_url="https://integrate.api.nvidia.com/v1",
-            api_key="REDACTED_API_KEY",
+            api_key=_get_api_key("NVIDIA_API_KEY"),
         )
 
         if self.model_name == "deepseek-r1":
@@ -711,7 +718,7 @@ class NvidiaLLMInterface(LLMInterface):
         # Alternatively, use the ChatNVIDIA class directly
         self.client_nv = ChatNVIDIA(
             model=self.model_url, 
-            api_key="REDACTED_API_KEY",
+            api_key=_get_api_key("NVIDIA_API_KEY"),
             temperature=0.6,
             top_p=0.7,
             max_tokens=4096*5, ## Default value is only 1024, Deepseek-r1 response can be very long...
@@ -791,7 +798,7 @@ class OpenRouterLLMInterface(LLMInterface):
 
         self.client = openai.OpenAI(
             base_url="https://openrouter.ai/api/v1",
-            api_key="REDACTED_API_KEY",
+            api_key=_get_api_key("OPENROUTER_API_KEY"),
         )
 
         if self.model_name == "o1":
@@ -879,7 +886,7 @@ class OpenRouterLLMInterface(LLMInterface):
         #         response = requests.post(
         #         url="https://openrouter.ai/api/v1/chat/completions",
         #         headers={
-        #             "Authorization": "Bearer REDACTED_API_KEY",
+        #             "Authorization": "Bearer " + _get_api_key("OPENROUTER_API_KEY"),
         #             "Content-Type": "application/json",
         #         },
         #         data=json.dumps({
@@ -1138,5 +1145,4 @@ if __name__ == "__main__":
     # test_image_reading()
 
     # test_local("gpt-oss-20b")
-
 

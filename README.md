@@ -36,7 +36,11 @@ To cite this project and corresponding paper, please use the following bib item:
 
 1. **LLM Model Access**
 
-    **OpenRouter**: In the ``./config.py``, replace the variable of ``openrouter_api_key`` with your own API key.
+    Set `OPENROUTER_API_KEY` for OpenRouter or `NVIDIA_API_KEY` for NVIDIA in the environment before running SchGen. Only the provider you use needs a key. Missing or blank keys raise a configuration error.
+
+    Inject credentials through your shell or a secret manager; never put API keys in Python files or commit them. Local `.env` files are ignored by Git, but SchGen does not automatically load them.
+
+    If a key has been exposed, revoke it with the provider and create a replacement. Removing it from Git history does not revoke it.
 
 2. **Python Environment**
     <details>
